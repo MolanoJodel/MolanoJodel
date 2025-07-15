@@ -1,0 +1,44 @@
+* {
+    margin: 5px 0px;
+    padding: 0;
+}
+
+.Top {
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.Pic{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.Pic img{
+    border-radius: 50%;
+    size: 20px;
+    max-height: 250px;
+    
+}
+
+p, h4 {
+    font-size: 24px;
+}
+
+.name, .address, .birth, .sex, .email {
+    display: flex;
+    margin: 15px 10px;
+    flex-wrap: wrap;
+}
+
+p {
+    margin-left: 15px;
+}
+
+.PersonalInfo {
+    background-color: antiquewhite;
+    margin: 0px 30%;
+    border-radius: 8px;
+    padding: 10px;
+}
