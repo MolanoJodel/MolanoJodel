@@ -1,44 +1,105 @@
 * {
-    margin: 5px 0px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Top {
-    font-weight: bold;
+body {
+    background-color: #e8f4fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.Nav {
+    background: #4bb6f3;
+    border-bottom: 2px solid #298fcf;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover {
+    background: #76c5f3;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #a8dcf9;
+    margin: 0 auto 1.5rem;
+}
+
+cont {
+    display: block;
+    font-size: 32px;
+    padding: 20px;
+    background-color: #f0f9ff;
+    border-radius: 20px;
+    margin-bottom: 1rem;
     text-align: center;
-    margin: 15px 0px;
 }
 
-.Pic{
+.columns {
     display: flex;
-    justify-content: center;
-    margin: 15px 0px;
-}
-
-.Pic img{
-    border-radius: 50%;
-    size: 20px;
-    max-height: 250px;
-    
-}
-
-p, h4 {
-    font-size: 24px;
-}
-
-.name, .address, .birth, .sex, .email {
-    display: flex;
-    margin: 15px 10px;
     flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+}
+
+h4 {
+    margin: 1rem 0 0.25rem;
 }
 
 p {
-    margin-left: 15px;
+    margin-bottom: 0.75rem;
 }
 
-.PersonalInfo {
-    background-color: antiquewhite;
-    margin: 0px 30%;
-    border-radius: 8px;
-    padding: 10px;
+@media (max-width: 768px) {
+    .columns {
+    flex-direction: column;
+    }
+
+}
+
+h1, h2, h4 {
+    color: #298fcf;
 }
